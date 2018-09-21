@@ -1,0 +1,12 @@
+<h3>Comments</h3>
+<div class="panel panel-primary">
+  <% @post.comments.each do |comm| %>
+    <div class="panel-heading">
+      <%= comm.username %>
+    </div>
+    <div class="panel-body">
+      <%= comm.body %>
+    </div>
+  <% end %>
+</div>
+<hr />
